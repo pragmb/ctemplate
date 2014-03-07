@@ -19,7 +19,7 @@ TEMPLATE(make_vector) (size_t size)
 #ifdef VECTOR_CPP
 {
 	printf("%s\n", ECHO(TEMPLATE(make_vector)));
-	vector* v = (vector*)  malloc(sizeof(vector));
+	vector* v = malloc(sizeof(vector));
 	v -> t = TEMPLATE(make) (size);
 	return v;
 }

@@ -39,4 +39,6 @@ int main()
 
 	vector_vector_vector_int* w = make_vector_vector_vector_int(5);
 	free_vector_vector_vector_int(w);
+
+	return 0;
 }

@@ -20,7 +20,7 @@ TEMPLATE_1_2(make_pair) (TYPE1* t1, TYPE2* t2)
 #ifdef PAIR_CPP
 {
 	printf("%s\n", ECHO(TEMPLATE_1_2(make_pair)));
-	pair* p = (pair*)  malloc(sizeof(pair));
+	pair* p = malloc(sizeof(pair));
 	p -> t1 = t1;
 	p -> t2 = t2;
 	return p;

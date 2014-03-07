@@ -6,7 +6,7 @@
 int* make_int(size_t size)
 {
 	printf("%s\n", ECHO(make_int));
-	return (int*) malloc(size * sizeof(int));
+	return malloc(size * sizeof(int));
 }
 
 void free_int(int* i)
@@ -18,7 +18,7 @@ void free_int(int* i)
 float* make_float(size_t size)
 {
 	printf("%s\n", ECHO(make_float));
-	return (float*) malloc(size * sizeof(float));
+	return malloc(size * sizeof(float));
 }
 
 void free_float(float* f)
