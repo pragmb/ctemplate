@@ -41,7 +41,7 @@ TEMPLATE(free_list) (list* l)
 	while(l -> head)
 	{
 		TEMPLATE(free) (l -> head -> value);
-		TYPE* next = l -> head -> next;
+		struct node* next = l -> head -> next;
 		free(l -> head);
 		l -> head = next;
 	}
