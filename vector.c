@@ -1,4 +1,4 @@
-#define VECTOR_CPP
+#define VECTOR_C
 
 #define TYPE int
 #include "vector.h"

@@ -32,8 +32,13 @@
 #undef TYPE2
 #undef TYPE1
 
+#define TYPE float
+#include "list.h"
+#undef TYPE
+
 int main()
 {
+
 	pair_vector_int_vector_float* s = make_pair_vector_int_vector_float(make_vector_int(5), make_vector_float(5));
 	free_pair_vector_int_vector_float(s);
 

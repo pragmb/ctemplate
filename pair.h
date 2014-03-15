@@ -17,7 +17,7 @@ typedef struct
 
 pair*
 TEMPLATE_1_2(make_pair) (TYPE1* t1, TYPE2* t2)
-#ifdef PAIR_CPP
+#ifdef PAIR_C
 {
 	printf("%s\n", ECHO(TEMPLATE_1_2(make_pair)));
 	pair* p = malloc(sizeof(pair));
@@ -31,7 +31,7 @@ TEMPLATE_1_2(make_pair) (TYPE1* t1, TYPE2* t2)
 
 void
 TEMPLATE_1_2(free_pair) (pair* p)
-#ifdef PAIR_CPP
+#ifdef PAIR_C
 {
 	TEMPLATE_1(free) (p -> t1);
 	TEMPLATE_2(free) (p -> t2);

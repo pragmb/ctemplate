@@ -16,7 +16,7 @@ typedef struct
 
 vector*
 TEMPLATE(make_vector) (size_t size)
-#ifdef VECTOR_CPP
+#ifdef VECTOR_C
 {
 	printf("%s\n", ECHO(TEMPLATE(make_vector)));
 	vector* v = malloc(sizeof(vector));
@@ -29,7 +29,7 @@ TEMPLATE(make_vector) (size_t size)
 
 void
 TEMPLATE(free_vector) (vector* v)
-#ifdef VECTOR_CPP
+#ifdef VECTOR_C
 {
 	TEMPLATE(free) (v -> t);
 	printf("%s\n", ECHO(TEMPLATE(free_vector)));

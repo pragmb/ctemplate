@@ -1,4 +1,4 @@
-#define PAIR_CPP
+#define PAIR_C
 
 #define TYPE1 int
 #define TYPE2 float
